@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi-app
+  name: fastapi-app-deployment
+  namespace: fastapi-app
 spec:
   replicas: 3
   selector:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: fastapi-app
-        image: emosharkov/basic-api
+        image: emosharkov/basic-api:latest
         ports:
         - containerPort: 80
