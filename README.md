@@ -1,7 +1,7 @@
 ﻿# ChatGPTAPIClone
 
 ## Overview
-The goal of this project is to create a scalable and fault tolerant API that can answer questions like ChatGPT with the help of the Llama 2.0 large language model. To approach this, I created a Python FastAPI that uses the llama-cpp-python library to communicate with the LLM. To scale this, I containerized this application into a docker image and decided to use kubernetes to help with horizontal scaling and container orchestration. I decided to Terraform to deploy my cluser to AWS EKS.
+The goal of this project is to create a scalable and fault tolerant API that can answer questions like ChatGPT with the help of the Llama 2.0 large language model. To approach this, I created a Python FastAPI that uses the llama-cpp-python library to communicate with the LLM. To scale this, I containerized this application into a docker image and decided to use kubernetes to help with horizontal scaling and container orchestration. I decided to use Terraform to deploy my cluser to AWS EKS.
 
 ## How to Run This Myself
 ### Prerequisites:
